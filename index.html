@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleScrum</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.svg" alt="Logo SimpleScrum">
+        </div>
+        <button id="newTask" class="button">Crear Tarea</button>
+    </header>
+    <main>
+        <div class="main-container">
+            <h1>SimpleScrum</h1>
+            <div class="container">
+                <h2>TO DO</h2>
+                <div class="task-container">
+                    <article class="task">
+                        <h3>Crear JSON</h3>
+                        <p> Responsable: <span>Jimmy Sanaicela</span></p>
+                        <p> Plazo: <span>06/06/2020</span></p>
+                    </article>
+                </div>
+            </div>
+            <div class="container">
+                <h2>IN PROGRESS</h2>
+                <div class="task-container">
+                    <article class="task">
+                        <h3>Crear JSON</h3>
+                        <p> Responsable: <span>Jimmy Sanaicela</span></p>
+                        <p> Plazo: <span>06/06/2020</span></p>
+                    </article>
+                </div>
+            </div>
+            <div class="container">
+                <h2>DONE</h2>
+                <div class="task-container">
+                    <article class="task">
+                        <h3>Crear JSON</h3>
+                        <p> Responsable: <span>Jimmy Sanaicela</span></p>
+                        <p> Plazo: <span>06/06/2020</span></p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside>
+        <div class="aside-container">
+            <h2>Nueva Tarea</h2>
+            <div class="form-container">
+                <form action="">
+                    <div class="input-container">
+                        <label for="titleTask">Titulo</label>
+                        <input name="titleTask" id="titleTask" type="text" placeholder="Escriba un titulo">
+                    </div>
+                    <div class="input-container">
+                        <label for="personTask">Responsable</label>
+                        <select name="personTask" id="personTask">
+                            <option value="">-Selescionar</option>
+                            <option value="jimmy">Jimmy</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="deadlineTask">Plazo de entrega</label>
+                        <select name="deadlineTask" id="deadlineTask">
+                            <option value="">-Selescionar</option>
+                            <option value="one">1 dia</option>
+                            <option value="seven">2 dias </option>
+                        </select>
+                    </div>
+                    <div class="action-container">
+                        <button>Guardar</button>
+                        <button>Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </aside>
+</body>
+</html>
