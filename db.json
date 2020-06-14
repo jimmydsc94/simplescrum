@@ -2,7 +2,7 @@
     "tasks": [
         {
             "id" : 1,
-            "title" : "Crear 1 JSON",
+            "title" : "Crear 1 JSON para el proyecto",
             "person": "jimmy",
             "state": "to-do",
             "deadline": 1592521965,
@@ -10,17 +10,17 @@
         },
         {
             "id" : 2,
-            "title" : "Crear 2 JSON",
+            "title" : "Crear 2 JSON para el proyecto",
             "person": "jimmy",
-            "state": "to-do",
+            "state": "in-progress",
             "deadline": 1592521965,
             "create": 1592176365
         },
         {
             "id" : 3,
-            "title" : "Crear 3 JSON",
+            "title" : "Crear 3 JSON para el proyecto",
             "person": "jimmy",
-            "state": "to-do",
+            "state": "done",
             "deadline": 1592521965,
             "create": 1592176365
         }
