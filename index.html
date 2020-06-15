@@ -4,51 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SimpleScrum</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body id="body">
     <header>
-        <div class="container">
+        <div class="header-container">
             <img src="logo.svg" alt="Logo SimpleScrum">
+            <button id="newTask" class="button">Crear Tarea</button>
         </div>
-        <button id="newTask" class="button">Crear Tarea</button>
     </header>
     <main>
         <div class="main-container">
             <h1>SimpleScrum</h1>
             <div class="container">
                 <h2>TO DO</h2>
-                <div class="task-container">
-                    <article class="task">
-                        <h3>Crear JSON</h3>
-                        <p> Responsable: <span>Jimmy Sanaicela</span></p>
-                        <p> Plazo: <span>06/06/2020</span></p>
-                    </article>
-                </div>
+                <div class="task-container" id="todoTasks"></div>
             </div>
             <div class="container">
                 <h2>IN PROGRESS</h2>
-                <div class="task-container">
-                    <article class="task">
-                        <h3>Crear JSON</h3>
-                        <p> Responsable: <span>Jimmy Sanaicela</span></p>
-                        <p> Plazo: <span>06/06/2020</span></p>
-                    </article>
-                </div>
+                <div class="task-container" id="inProgressTasks"></div>
             </div>
             <div class="container">
                 <h2>DONE</h2>
-                <div class="task-container">
-                    <article class="task">
-                        <h3>Crear JSON</h3>
-                        <p> Responsable: <span>Jimmy Sanaicela</span></p>
-                        <p> Plazo: <span>06/06/2020</span></p>
-                    </article>
-                </div>
+                <div class="task-container" id="doneTasks"></div>
             </div>
         </div>
     </main>
 
-    <aside>
+    <aside id="formElement">
         <div class="aside-container">
             <h2>Nueva Tarea</h2>
             <div class="form-container">
@@ -73,12 +56,21 @@
                         </select>
                     </div>
                     <div class="action-container">
-                        <button>Guardar</button>
-                        <button>Cancelar</button>
+                        <button type="submit">Guardar</button>
+                        <button type="reset" id="cancelForm">Cancelar</button>
                     </div>
                 </form>
             </div>
         </div>
     </aside>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/sortable.js"></script>
+    <script src="js/helpers.js"></script>
+    <script src="js/dates.js"></script>
+    <script src="js/hammer.js"></script>
+    <script src="js/axios.js"></script>
+    <script src="js/draggable.js"></script>
 </body>
 </html>
